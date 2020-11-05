@@ -1,0 +1,20 @@
+ul{
+    width: 100%;
+
+    li{
+        list-style: none;
+        font-size: 12px;
+        // display: inline-block;
+    }
+}
+
+.grid{
+    > div {
+        height: 250px;
+        border: solid 1px #ddd;
+    
+        img {
+          width: 100%;
+        }
+      }
+}

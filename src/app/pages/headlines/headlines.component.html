@@ -1,0 +1,14 @@
+<p>headlines works!</p>
+<select [(ngModel)] = "country" (change)="setCountry()">
+    <option value='mx'>MX</option>
+    <option value='us'>US</option>
+    <option value='uk'>UK</option>
+</select>
+<div class="grid">
+    <div class="sm-50 md-25" *ngFor= "let item of news">
+        <a href="{{item.url}}">
+            <img src="{{item.urlToImage}}" alt="">
+            {{item.title}}
+        </a>
+    </div>
+</div>

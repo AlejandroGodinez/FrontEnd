@@ -1,0 +1,22 @@
+<h2>News <h2>
+<select>
+    <option *ngFor="let item of sources" value="{{item.id}}">
+        {{item.name}}
+    </option>
+</select>
+<div class="grid">
+    <div class="sm-50 md-25" *ngFor="let item of news" name="grid">
+        <a href="{{item.url}}">
+            <img src="{{item.urlToImage}}" alt="">
+            {{item.title}}
+        </a>
+    </div>
+</div>
+<!-- <ul>
+    <li *ngFor="let item of sources">
+        <a [routerLink]="item.id">
+            <img *ngIf="item.image" src="{{item.image}}" alt="news image"/>
+            {{item.name}}
+        </a>
+    </li>
+</ul> -->
